@@ -1,0 +1,75 @@
+<view class='header'>
+    <text style='font-size:36rpx;padding-left:10rpx;'>直播</text>
+    <text style='font-size:36rpx;padding-right:10rpx;'>{{info.result.list[1].title}}</text>
+</view>
+<view style="width:100%;display:flex;flex-wrap:wrap;background-color:#F5F5F5">
+<view wx:for="{{info.result.list[1].live}}">
+<navigator url="../detailPage/detailPage?url={{item.liveurl}}">
+<view class="NBAblock">
+<image src="{{item.player1logobig}}" class="NBAicon"/>
+<view class="NBAscore">{{item.score}}</view>
+<image src="{{item.player2logobig}}"class="NBAicon"/>
+<view class="NBAtext">{{item.player1}}</view>
+<view class="NBAtime">{{item.title}}</view>
+<view class="NBAtext">{{item.player2}}</view>
+</view>
+</navigator>
+</view>
+</view>
+
+<view class='header'>
+    <text style='font-size:36rpx;padding-left:10rpx;'>今日赛事</text>
+    <text style='font-size:36rpx;padding-right:10rpx;'>{{info.result.list[1].title}}</text>
+</view>
+<view style="width:100%;display:flex;flex-wrap:wrap;background-color:#F5F5F5">
+<view wx:for="{{info.result.list[1].tr}}">
+<navigator url="../detailPage/detailPage?url={{item.link2url}}">
+<view  class="NBAblock" >
+<image src="{{item.player1logobig}}"class="NBAicon"/>
+<view class="NBAscore">{{item.score}}</view>
+<image src="{{item.player2logobig}}"class="NBAicon"/>
+<view class="NBAtext">{{item.player1}}</view>
+<view class="NBAtime">{{item.time}}</view>
+<view class="NBAtext">{{item.player2}}</view>
+</view>
+</navigator>
+</view>
+</view>
+
+<view class='header'>
+    <text style='font-size:36rpx;padding-left:10rpx;'>昨日比赛</text>
+    <text style='font-size:36rpx;padding-right:10rpx;'>{{info.result.list[0].title}}</text>
+</view>
+<view style="width:100%;display:flex;flex-wrap:wrap;background-color:#F5F5F5">
+<view wx:for="{{info.result.list[0].tr}}">
+<navigator url="../detailPage/detailPage?url={{item.link2url}}">
+<view  class="NBAblock">
+<image src="{{item.player1logobig}}" class="NBAicon"/>
+<view class="NBAscore">{{item.score}}</view>
+<image src="{{item.player2logobig}}" style="width:115rpx;height:115rpx;"mode="aspectFit"/>
+<view class="NBAtext">{{item.player1}}</view>
+<view class="NBAtime"></view>
+<view class="NBAtext">{{item.player2}}</view>
+</view>
+</navigator>
+</view>
+</view>
+
+<view class='header'>
+    <text style='font-size:36rpx;padding-left:10rpx;'>未开赛</text>
+    <text style='font-size:36rpx;padding-right:10rpx;'>{{info.result.list[2].title}}</text>
+</view>
+<view style="width:100%;display:flex;flex-wrap:wrap;background-color:#F5F5F5">
+<view wx:for="{{info.result.list[2].tr}}">
+<navigator url="../detailPage/detailPage?url='{{item.liveurl}}''">
+<view  class="NBAblock">
+<image src="{{item.player1logobig}}"class="NBAicon"/>
+<view class="NBAscore">{{item.score}}</view>
+<image src="{{item.player2logobig}}"class="NBAicon"/>
+<view class="NBAtext">{{item.player1}}</view>
+<view class="NBAtime">{{item.time}}</view>
+<view class="NBAtext">{{item.player2}}</view>
+</view>
+</navigator>
+</view>
+</view>

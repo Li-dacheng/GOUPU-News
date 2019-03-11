@@ -1,0 +1,79 @@
+.leagueIcon{
+   width:750rpx;
+   height:360rpx;
+   ime-mode: "aspectFit"
+}
+.LeagueText{
+   background-color: #FFFFFF;
+   font-size:50rpx;
+   border-bottom: solid 1rpx #DC143C;
+   display:flex;
+   justify-content: center;
+}
+.YC{
+   background-color: #DC143C;
+}
+.bang{
+   display:flex;
+   flex-wrap: wrap;
+   width:100%;
+   background-color: #FFFFFF;
+}
+.jifenbang{
+ width:373rpx;
+ display:flex;
+ justify-content: center;
+ font-size:40rpx;
+ font-weight: 500;
+ border-right:solid 2rpx #DC143C;
+}
+.saicheng{
+   display:flex;
+   justify-content: center;
+   color:#FFFFFF;
+   font-size:40rpx;
+   font-weight: bold;
+}
+.YCclass{
+   background-color: #FFFFFF;
+   width:100%;
+   height:200rpx;
+   display:flex;
+   flex-wrap: wrap;
+   border-top:solid 1px grey;
+}
+
+.YCitem1{
+   width:250rpx;
+   margin-top:15rpx;
+   display:flex;
+   justify-content: center;
+}
+.YCitem2{
+   width:250rpx;
+   margin-top:15rpx;
+   display:flex;
+   justify-content: center;
+}
+.YCitem3{
+   width:250rpx;
+   margin-top:15rpx;
+   display:flex;
+   justify-content: center;
+}
+.YCitem4{
+   width:250rpx;
+   margin-top:15rpx;
+   display:flex;
+   justify-content: center;
+   font-size:40rpx;
+   font-weight:bold;
+}
+.YCitem5{
+   width:250rpx;
+   margin-top:15rpx;
+   display:flex;
+   justify-content: center;
+   font-size:50rpx;
+   font-weight:500;
+}

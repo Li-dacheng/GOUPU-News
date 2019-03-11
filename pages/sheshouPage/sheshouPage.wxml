@@ -1,0 +1,32 @@
+<view class="jifen">
+<view class="jifenTitle">{{key}}射手榜</view>
+
+<view class="jifenrow">
+<view class="sheshouitem">排名</view>
+<view class="sheshouitemlong">球员</view>
+<view class="sheshouitemlong">球队</view>
+<view class="sheshouitem">进球</view>
+<view class="sheshouitem">点球</view>
+</view>
+
+<view wx:for="{{info.result.views.sheshoubang}}">
+   <view class="jifenrow">
+      <view class="sheshouitem">
+      {{item.c1}}
+      </view>
+      <view class="sheshouitemlong">
+      {{item.c2}}
+      </view>
+      <view class="sheshouitemlong">
+      {{item.c3}}
+      </view >
+      <view class="sheshouitem">
+      {{item.c4}}
+      </view>
+      <view class="sheshouitem">
+      {{item.c5}}
+      </view>
+   </view>
+</view>
+
+</view>

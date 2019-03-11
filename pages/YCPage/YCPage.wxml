@@ -1,0 +1,72 @@
+<view class="YC">
+
+<image src="{{imageUrl}}"class="leagueIcon"/>
+<view class="LeagueText">{{info.result.key}}</view>
+  <view class="bang">
+    <view class="jifenbang">
+     <navigator style="height:100%"url="../jifenPage/jifenPage?key={{key}}">
+     积分榜
+     </navigator>
+    </view>
+     
+    <view class="jifenbang">
+     <navigator style="height:100%"url="../sheshouPage/sheshouPage?key={{key}}">
+     射手榜
+     </navigator>
+     </view>
+  </view>
+
+<view class="saicheng">{{info.result.tabs.saicheng1}}</view>
+<view wx:for="{{info.result.views.saicheng1}}">
+<navigator url="../detailPage/detailPage?url={{item.c51Link}}"> 
+    <view class="YCclass">
+      <view class="YCitem1">
+        {{item.c2}}
+      </view>
+      <view class="YCitem2">
+    {{item.c3}}
+      </view>
+      <view class="YCitem3">
+    {{item.c1}}
+      </view>
+      <view class="YCitem4">
+    {{item.c4T1}}
+      </view>
+      <view class="YCitem5">
+    {{item.c4R}}
+      </view>
+      <view class="YCitem4">
+    {{item.c4T2}}
+      </view>
+   </view>
+   </navigator>
+</view>
+
+<view class="saicheng">{{info.result.tabs.saicheng2}}</view>
+<view wx:for="{{info.result.views.saicheng2}}">
+   <navigator url="../detailPage/detailPage?url={{item.c51Link}}"> 
+   <view class="YCclass">
+      <view class="YCitem1">
+        {{item.c2}}
+      </view>
+      <view class="YCitem2">
+    {{item.c3}}
+      </view>
+      <view class="YCitem3">
+    {{item.c1}}
+      </view>
+      <view class="YCitem4">
+    {{item.c4T1}}
+      </view>
+      <view class="YCitem5">
+    {{item.c4R}}
+      </view>
+      <view class="YCitem4">
+    {{item.c4T2}}
+      </view>
+      
+   </view>
+   </navigator>
+</view>
+
+</view>

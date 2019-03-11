@@ -1,0 +1,50 @@
+.NBAblock{
+   height:200rpx;
+   width:330rpx;
+   margin-left:30rpx;
+   margin-top:30rpx;
+   margin-bottom:20rpx;
+   display: flex;
+   flex-wrap: wrap;
+   background-color: #FFFFFF;
+}
+
+.NBAicon{
+   height: 110rpx;
+   width: 110rpx;
+   ime-mode:"aspectFit";
+}
+.NBAscore{
+  width:105rpx;
+  height: 50rpx;
+  margin-top: 40rpx;
+  display: flex;
+ justify-content: center;
+  font-size:25rpx;
+}
+.NBAtext{
+   width:110rpx;
+   font-size:30rpx;
+   display: flex;
+ justify-content: center;
+}
+.NBAtime{
+   width:110rpx;
+   font-size:25rpx;
+   display: flex;
+   justify-content: center;
+}
+.header{
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: #DC143C;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height:60rpx;
+  padding-left:10rpx;
+  padding-right:10rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+}

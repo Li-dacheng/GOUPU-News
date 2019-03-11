@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/detailPage/detailPage",
+    "pages/NBAPage/NBAPage",
+    "pages/YCPage/YCPage",
+    "pages/jifenPage/jifenPage",
+    "pages/sheshouPage/sheshouPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#DC143C",
+    "navigationBarTitleText": "狗扑新闻",
+    "enablePullDownRefresh": false,
+    "backgroundColor":"#DC143C"
+  }
+}

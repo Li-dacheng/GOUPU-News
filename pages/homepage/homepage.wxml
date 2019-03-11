@@ -1,0 +1,198 @@
+<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">精选</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">体育</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">社会</view>
+    <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">国内</view>
+    <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">国际</view>
+    <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">娱乐</view>
+    <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">军事</view>
+    <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">科技</view>
+</scroll-view>
+
+<image class="btn" src="/images/refresh.png" bindtap="btnClick"></image>
+
+<swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+<!--精选  -->
+    <swiper-item>
+        <scroll-view class="scoll-h" scroll-y="true">
+        <swiper autoplay="auto" interval="3000" duration="1500" indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#FFFFFF">
+     
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info1.result.data[10].url}}" >
+      <view style="height:100%;background-image:url('{{info1.result.data[10].thumbnail_pic_s}}');background-size: cover">
+      <view class='item-text' style="color:#FFFFFF">{{info1.result.data[10].title}}</view>
+      </view>
+      </navigator>
+      </swiper-item>
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info1.result.data[15].url}}" >
+      <view style="height:100%;background-image:url('{{info1.result.data[15].thumbnail_pic_s}}');background-size: cover">
+      <view class='item-text' style="color:#FFFFFF">{{info1.result.data[15].title}}</view>
+      </view>
+      </navigator>
+      </swiper-item>
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info1.result.data[19].url}}" >
+      <view style="height:100%;background-image:url('{{info1.result.data[19].thumbnail_pic_s}}');background-size: cover">
+      <view class='item-text' style="color:#FFFFFF">{{info1.result.data[19].title}}</view>
+      </view>
+      </navigator>
+      </swiper-item>
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info1.result.data[25].url}}" >
+      <view style="height:100%;background-image:url('{{info1.result.data[25].thumbnail_pic_s}}');background-size: cover">
+      <text class='item-text' style="color:#FFFFFF">{{info1.result.data[25].title}}</text>
+      </view>
+      </navigator>
+      </swiper-item>
+  </swiper>
+  
+    <view class='selection'>
+    <view class='header'>
+      <text style='font-size:36rpx;padding-left:10rpx;'>最新资讯</text>
+       <text class='text-all' bindtap='btnClick'>全部新闻</text> 
+    </view>
+    <view  wx:for="{{info1.result.data}}" style="position:relative">
+      <navigator class='list-item' url="../detailPage/detailPage?url={{item.url}}">
+        <image src="{{item.thumbnail_pic_s}}" class="list-item-images" mode='aspectFit'/>
+        <view class="list-item-text">
+            <view class="list-item-text-title">
+            {{item.title}}
+            </view>
+            <view class="list-item-text-content">
+              {{item.date}}
+              {{item.author_name}}
+            </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+    </scroll-view>
+    </swiper-item>
+
+<!--体育  -->
+    <swiper-item>
+        <scroll-view class="scoll-h" scroll-y="true">
+        <swiper autoplay="auto" interval="3000" duration="1500" indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#FFFFFF">
+     
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info2.result.data[10].url}}" >
+      <view style="height:100%;background-image:url('{{info2.result.data[10].thumbnail_pic_s}}');background-size: cover">
+      <view class='item-text' style="color:#FFFFFF">{{info2.result.data[10].title}}</view>
+      </view>
+      </navigator>
+      </swiper-item>
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info2.result.data[15].url}}" >
+      <view style="height:100%;background-image:url('{{info2.result.data[15].thumbnail_pic_s}}');background-size: cover">
+      <view class='item-text' style="color:#FFFFFF">{{info2.result.data[15].title}}</view>
+      </view>
+      </navigator>
+      </swiper-item>
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info2.result.data[19].url}}" >
+      <view style="height:100%;background-image:url('{{info2.result.data[19].thumbnail_pic_s}}');background-size: cover">
+      <view class='item-text' style="color:#FFFFFF">{{info2.result.data[19].title}}</view>
+      </view>
+      </navigator>
+      </swiper-item>
+      <swiper-item>
+      <navigator style="height:100%"url="../detailPage/detailPage?url={{info2.result.data[25].url}}" >
+      <view style="height:100%;background-image:url('{{info2.result.data[25].thumbnail_pic_s}}');background-size: cover">
+      <text class='item-text' style="color:#FFFFFF">{{info2.result.data[25].title}}</text>
+      </view>
+      </navigator>
+      </swiper-item>
+  </swiper>
+
+<view class='selection'>
+  <view class='header'>
+    <text style='font-size:36rpx;padding-left:10rpx;'>主要赛事</text>
+  </view>
+
+  <view class='content'>
+  <navigator url="../NBAPage/NBAPage">
+    <view class='content-item'>
+        <image src='/images/NBA.jpg'/>
+    </view>
+  </navigator>
+  <navigator url="../YCPage/YCPage?key=意甲">
+    <view class='content-item'>
+      <image src='/images/意甲.jpg'/>
+    </view>
+  </navigator>
+  <navigator url="../YCPage/YCPage?key=德甲">
+    <view class='content-item'>
+      <image src='/images/德甲.jpg'/>
+    </view>
+  </navigator>
+  <navigator url="../YCPage/YCPage?key=西甲">
+    <view class='content-item'>
+      <image src='/images/西甲.jpg'/>
+    </view>
+  </navigator>
+  <navigator url="../YCPage/YCPage?key=中超">
+    <view class='content-item'>
+      <image src='/images/中超.jpg'/>
+    </view>
+  </navigator>
+  <navigator url="../YCPage/YCPage?key=英超">
+    <view class='content-item'>
+      <image src='/images/英超.jpg'/>
+    </view>
+  </navigator>
+
+  </view>
+</view>
+
+<view class='selection'>
+  <view class='header'>
+    <text style='font-size:36rpx;padding-left:10rpx;'>最新资讯</text>
+    <text class='text-all' bindtap='btnClick'>全部新闻</text>
+  </view>
+
+    <view  wx:for="{{info2.result.data}}" style="position:relative">
+      <navigator class='list-item' url="../detailPage/detailPage?url={{item.url}}">
+        <image src="{{item.thumbnail_pic_s}}" class="list-item-images" mode='aspectFit'/>
+        <view class="list-item-text">
+            <view class="list-item-text-title">
+            {{item.title}}
+            </view>
+            <view class="list-item-text-content">
+              {{item.date}}
+              {{item.author_name}}
+            </view>
+        </view>
+    
+      </navigator>
+    </view>
+</view>
+
+        </scroll-view>
+    </swiper-item>
+    
+    <!--其他新闻  -->
+    <swiper-item wx:for="{{info}}">
+    <scroll-view scroll-y="true" class="scoll-h" >
+
+        <view wx:for="{{item.result.data}}" style="position:relative">    
+        <navigator class='list-item' url="../detailPage/detailPage?url={{item.url}}">
+        <image src="{{item.thumbnail_pic_s}}" class="list-item-images" mode='aspectFit'/>
+        <view class="list-item-text">
+        <view class="list-item-text-title">
+        {{item.title}}
+        </view>
+        <view class="list-item-text-content">
+        {{item.date}}
+        {{item.author_name}}
+        </view>
+        </view>
+
+        </navigator>
+        </view>
+
+    </scroll-view>
+    </swiper-item>
+    
+</swiper>

@@ -1,0 +1,36 @@
+<view class="jifen">
+
+<view class="jifenTitle">{{key}}积分榜</view>
+
+<view class="jifenrow">
+<view class="jifenitem">排名</view>
+<view class="jifenitemlong">球队</view>
+<view class="jifenitem">场次</view>
+<view class="jifenitemlong">胜/平/负</view>
+<view class="jifenitem">净胜球</view>
+<view class="jifenitem">积分</view>
+</view>
+<view wx:for="{{info.result.views.jifenbang}}">
+   <view class="jifenrow">
+      <view class="jifenitem">
+      {{item.c1}}
+      </view>
+      <view class="jifenitemlong">
+      {{item.c2}}
+      </view>
+      <view class="jifenitem">
+      {{item.c3}}
+      </view >
+      <view class="jifenitemlong">
+      {{item.c41}}/{{item.c42}}/{{item.c43}}
+      </view>
+      <view class="jifenitem">
+      {{item.c5}}
+      </view>
+      <view class="jifenitem">
+      {{item.c6}}
+      </view>
+   </view>
+</view>
+
+</view>
